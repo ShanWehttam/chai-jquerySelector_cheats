@@ -5,6 +5,8 @@ expect([1, 2, 3]).to.include.members([1,2,3,3,3,2])
 expect([1, 2, 3]).to.have.lengthOf(3).and.include.members([1,2])
 expect([{a: 1}, {b: 2}, {c: 3}]).to.deep.include.members([{a: 1}, {b: 2}])
   expect([{a: 1}, {b: 2}]).to.deep.include({a: 1})
+  expect({'.a': {'[b]': 'x'}}, "F correct").to.deep.include.property('\\.a.\\[b\\]', 'x');
+
 expect( [ { a: { c: 3, d: 4 }}, {d: 13}, {x: 'x'}    ] , "Must include key value pair (property)").to.deep.include.property('[1].d', 13); // passes
 expect([1, 2], "H").to.include(1)
 expect('foobar').to.include('foo');
