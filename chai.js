@@ -28,3 +28,4 @@ expect({a: 1}).to.eql({a: 1}); // Recommended
  expect({}).to.be.empty;
 // to.eql wraps deep, so use .eql
 //expect({a: 1}).to.deep.equal({a: 1}); // without the 'deep', it would treat it as {a: 1} === {a: 1} (strict equality) which is false
+//cy.log('I really dont think chai likes Objects or Arrays as values
